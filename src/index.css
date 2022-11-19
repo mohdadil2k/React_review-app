@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5rem;
+    background-color: rgb(210, 236, 245);
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.reviews{
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.underline{
+    background-color: rgb(17, 191, 133);
+    margin-top: 5px;
+    height: 4px;
+    width: 90px;
+}
+.container{
+    position: relative;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    width: 500px;
+    min-height: 340px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 8px rgba(0,0,0,.5);
+}
+.img-container{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+}
+.img-container::before{
+    content: '';
+    display: inline-block;
+    background-color: rgba(99, 99, 252, 0.959);
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+    position: absolute;
+    top: 6px;
+    right:-5px;
+    z-index: -1;
+    transform: translateY(-10%);
+}
+.quote-right{
+    position: absolute;
+    left: 0;
+    top: 10px;
+    font-size: 12px;
+    padding: 6px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background-color: rgba(99, 99, 252, 0.959);
+    color: #fff;
+}
+.container h5{
+    color: rgb(17, 191, 133);
+    margin: 7px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.button{
+    margin: 10px 0;
+}
+.button button{
+    color: rgb(17, 191, 133);
+    margin: 0 9px 0 9px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.random-btn{
+    background-color: rgba(17, 191, 133,.5);
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 3px 8px;
+    margin-top: 4px;
+    font-weight: bolder;
+
+}
